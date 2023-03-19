@@ -115,11 +115,11 @@
   </style>
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+<div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px;">
   <h5 class="w3-bar-item" >Databases </h5>
-   {% comment %} <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">
     <input type="submit" value="User">
-   </button>  {% endcomment %}
+   </button>  
 
   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">User</button> 
    
@@ -132,11 +132,11 @@
     
   </button> 
     
-   {% comment %} {% comment %}<button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top1')">Organizer</button> {% endcomment %}
+    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top1')">Organizer</button> 
   
-  {% comment %} <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top2')">Home</button> {% endcomment %}
-  {% comment %} <button href="{{request.META.HTTP_REFERER}}" class="w3-bar-item w3-button tablink">Go back</button>  {% endcomment %}
-  {% comment %} <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top3')">Team</button>
+   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top2')">Home</button> 
+   <button href="{{request.META.HTTP_REFERER}}" class="w3-bar-item w3-button tablink">Go back</button>  
+   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top3')">Team</button>
 
   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top4')">Team_info</button>
 
@@ -144,7 +144,7 @@
 
   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top6')">Submission</button>
 
-  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top7')">Judge</button>   {% endcomment %}
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top7')">Judge</button>   
 
   <!-- <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bottom')">Bottom</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Zoom')">Zoom</button> -->
@@ -156,14 +156,14 @@
     <div id="Fade" class="w3-container city w3-animate-fade" style="display:none" >
       <table border="1" bgcolor="lightblue"> 
       
-      {% comment %} insert user {% endcomment %}
+      /* insert user  */
         <form action='InsertUser'>
           <input class = "btn-primary" style = "background-color: #ef6123;color: white;border: none;padding: 0.6%;font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;" type="submit" value="Insert User">
       </form>
 
       <center><form method="POST" action="sortUser">
         
-        {% csrf_token %}
+        /* {% csrf_token %} */
         <label for="Sort"></label>
             <select id="Sort" name="Sort" style = "background-color: white">
                 <option value="user_id">User ID</option>
@@ -200,12 +200,12 @@
              <td><a href="editUser/{{result.user_id}}">Edit</a></td>
              <td><a href="delUser/{{result.user_id}}">Delete</a></td> 
 
-             {% comment %} <td><a href="path('editUser/' , {{result.user_id}})">Edit✍</a></td>
-             <td><a href="path('delUser/' , {{result.user_id}})">Delete</a></td> {% endcomment %}
+              <td><a href="path('editUser/' , {{result.user_id}})">Edit✍</a></td>
+             <td><a href="path('delUser/' , {{result.user_id}})">Delete</a></td> 
             
         </tr>
 
-        {% endfor %} 
+        /* {% endfor %}  */
       </table>
   </div>
 </div>
@@ -272,7 +272,7 @@
     </div>
   
 </div>
-  {% comment %} {% if data %}
+   {% if data %}
 <div class="container py-5">
     <table class="table table-bordered" style="background-color:Bisque">
         <thead>
@@ -300,10 +300,10 @@
         </tbody>
     </table>
 </div>
-{% endif %} {% endcomment %}
+{% endif %} 
 
 
-  {% comment %} <div id="Left" class="w3-container city w3-animate-left" style="display:none">
+   <div id="Left" class="w3-container city w3-animate-left" style="display:none">
     <h2>Upcoming Contests</h2>
     <p>All details of ongoing contest</p>
   </div>
@@ -369,7 +369,7 @@
     <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
   </div> -->
 
-</div> {% endcomment %}
+</div> 
 
 <script>
 function openLink(evt, animName) {
