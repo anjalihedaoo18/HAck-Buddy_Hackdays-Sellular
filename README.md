@@ -11,7 +11,7 @@ Our HMS system allow organisers to create events, setup teams, and manage regist
 After the successful submission there we also created workspace for judges, so that they can easily get all the information about every participants submission and for the selection of the winner.
 
 ***
-To route with-in the pages for now while our backend isn't connected go through:
+To route with-in the pages for now, while our backend isn't connected, go through:
 * Frontend/Pages/Hackathon_Detail.html
 * Frontend/Pages/delUser.html
 * Frontend/Pages/editUser.html
