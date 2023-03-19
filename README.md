@@ -2,5 +2,6 @@
 
 Hi everyone & Sellular hackathon Judges 
 
-We, the team of HAck-Buddy : Hiresh Yadav and Anjali Hedaoo present you the frontend design of a Hackathon-Management-System.
+We, The Team of HAck-Buddy : Hiresh Yadav and Anjali Hedaoo present you the frontend design of a Hackathon-Management-System.
 
+The Backend part is made for future use, when we connect it with database it will work properly and easy to use for organiser of hackathon to give all the information using Hackathon-Management-System and also for the user or participants to easy login and apply for the hackathon.
